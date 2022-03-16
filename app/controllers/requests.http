@@ -1,0 +1,28 @@
+# ##Coffees Index
+GET http://localhost:3000/coffees.json
+
+### Coffees Create
+POST http://localhost:3000/coffees.json 
+Content-Type: application/json 
+
+{
+  "name": "test test",
+  "price": 100,
+  "milk": "almond milk"
+}
+
+### Show
+GET http://localhost:3000/coffees/1.json 
+
+### Update
+PATCH http://localhost:3000/coffees/5.json 
+Content-Type: application/json
+
+{
+  "name": "to see if it updates",
+  "price": 10000,
+  "milk": "any milk"
+}
+
+### Destroy
+DELETE http://localhost:3000/coffees/5.json 
